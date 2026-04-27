@@ -63,7 +63,7 @@ pipeline {
                 --network my-angular-springboot-net \
                 -p 80:80 \
                 -v $WORKSPACE/angular-16-client/dist/angular-16-crud:/usr/share/nginx/html \
-                -v /root/prapul/projects/nginx.conf:/etc/nginx/conf.d/default.conf:ro \
+                -v /opt/apps/spring-boot-app/angular-16-client/nginx.conf:/etc/nginx/conf.d/default.conf:ro \
                 nginx:alpine
                 '''
             }
